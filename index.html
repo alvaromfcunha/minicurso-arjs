@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Minicurso AR.js - 39ᵃ Fetin</title>
+  </head>
+
+  <!-- Inclusão do AR.js e Aframe -->
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  <!-- Componentes são registrados nesse arquivo! -->
+  <script src="components.js"></script>
+
+  <!-- Scene do Aframe -->
+  <a-scene embedded arjs>
+
+    <!-- Target como um marker padrão (Hiro) -->
+    <a-marker preset="hiro">
+
+      <!-- Um cubo 3D -->
+      <a-box cubo ></a-box>
+
+    </a-marker>
+
+    <!-- A camera do AR.js!! -->
+    <a-entity camera></a-entity>
+
+  </a-scene>
+
+</html>
