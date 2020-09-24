@@ -1,4 +1,3 @@
-
 // Componente "cubo":
 AFRAME.registerComponent('cubo', {
     init: function() {
